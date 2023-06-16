@@ -5,9 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        
+    
+        swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+    
+        swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          width: 100%;
+          height: 80vh;
+          display: flex;
+          justify-content: center;
+          object-fit: cover;
+          background-repeat: no-repeat;
+          align-items: center;
+          border: 1px solid #000;
+        }
+    
+        swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
 </head>
 <body>
-    <a href="./routes/about.html">Next</a>
-    <a href="./routes/bill.html">bill</a>
+    
+    <!-- Wrapper -->
+
+    <div class="wrapper">
+
+        <div class="header">
+            <div class="header_top">
+                <div class="container">
+                    <div class="header__nav">
+                        <div class="header__logo">
+                            <h1>Logo</h1>
+                        </div>
+                        <div class="header__text">
+                            <span>Урганч шаҳри ва Хоразм вилоятида асфалт ётқизиш ва йўл қурилиши</span>
+                        </div>
+                        <button  class="header__button btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #00000085"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel">Menu</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="modal__panel">
+                      <a href="">Биз хакимизда</a>
+                      <a href="">Биз билан bog'laning</a>
+                    </div>
+                  </div>
+
+                <!-- Modal -->
+
+            </div>
+
+            <swiper-container class="mySwiper" navigation="true">
+                <swiper-slide style="background-image: url(https://asfalt-master.uz/wp-content/uploads/2022/04/slider-2.jpg);"></swiper-slide>
+                <swiper-slide>Slide 2</swiper-slide>
+                <swiper-slide>Slide 3</swiper-slide>
+                <swiper-slide>Slide 4</swiper-slide>
+                <swiper-slide>Slide 5</swiper-slide>
+                <swiper-slide>Slide 6</swiper-slide>
+                <swiper-slide>Slide 7</swiper-slide>
+                <swiper-slide>Slide 8</swiper-slide>
+                <swiper-slide>Slide 9</swiper-slide>
+              </swiper-container>
+        </div>
+
+    </div>
+
+    <!-- Wrapper -->
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
