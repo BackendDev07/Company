@@ -60,6 +60,16 @@ body{
             color: #000;
         }
     }
+    &__logo{
+        text-decoration: none; list-style: none;
+        cursor: pointer;
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            background-repeat: no-repeat;
+        }
+    }
     &__text{
         width: 35%;
         text-align: center;
@@ -148,4 +158,10 @@ body{
 
 // Header
 
-
+.menu{
+    &__top{
+        background-color: #000;
+        width: 100%;
+        height: 6vh;
+    }
+}

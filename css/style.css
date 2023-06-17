@@ -55,6 +55,18 @@ body::-webkit-scrollbar-thumb {
 .header__box a {
   color: #000;
 }
+.header__logo {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+.header__logo img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+}
 .header__text {
   width: 35%;
   text-align: center;
@@ -133,4 +145,9 @@ body::-webkit-scrollbar-thumb {
   .header__text {
     display: none;
   }
+}
+.menu__top {
+  background-color: #000;
+  width: 100%;
+  height: 6vh;
 }/*# sourceMappingURL=style.css.map */
